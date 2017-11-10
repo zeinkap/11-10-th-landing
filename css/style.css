@@ -1,3 +1,54 @@
-html {
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Philosopher|Spirax');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding-top: 50px;
+}
+
+.top-nav {
+  background: #000;
+  /* remove height later on if not needed */
+  height: 50px;
+  position: fixed; /* different that absolute cuz fixes to window and doesnt still appear when scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 20px;
+
+}
+
+.top-nav ul li {
+  display: inline-block;
+}
+
+.top-nav li a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  font-family: "Philosopher", "Arial";
+}
+
+ul li {
+  color: white;
+}
+
+.landing {
   background: pink;
+  height: calc(100vh - 50px); /* vh forces to take up entire height of the viewport window. We do - 50px cuz we want to remove the nav bar. Nav bar is 50 pixels. */
+  background-image: url("../images/pexels-photo_large.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex; /* makes the children elements become flex */
+  align-items: center; /* deals with vertical alignment and only works when the parent element has a defined height */
+  justify-content: center; /* deals with horizontal alignment */
+  color: white;
+  text-align: center; /* to center the subhead h3 tag */
+  font-family: "Spirax", "Arial", sans-serif;
+  text-shadow: 1px 2px #ff0000;
 }
