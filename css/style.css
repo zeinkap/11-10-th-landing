@@ -51,4 +51,41 @@ ul li {
   text-align: center; /* to center the subhead h3 tag */
   font-family: "Spirax", "Arial", sans-serif;
   text-shadow: 1px 2px #ff0000;
+  font-size: 25px;
+  transition: 1s;
+}
+
+/* higher media queries go above lower media queries */
+@media (max-width: 1000px) {
+  .landing {
+    font-size: 2em;
+  }
+}
+
+
+
+/* its good to put media query immdediatly after the thing it is affecting. The media query only runs if max width is 700px. We can overule the properties that were previously set by .landing */
+@media (max-width: 700px) {
+  .landing {
+    background-image: url("../images/pexels-photo-med.jpeg");
+    opacity: 0.6;
+  }
+}
+
+.row {
+  display: flex;
+  /* you can use flex-wrap: wrap to prevent flexbox from forcing content to be next to each other */
+}
+
+.col-3 {
+  width: 33.33%;
+}
+
+@media (max-width: 700px) {
+  .row {
+    display: block;
+  }
+  .col-3 {
+    width: 100%;
+  }
 }
