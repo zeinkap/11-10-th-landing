@@ -36,7 +36,6 @@ body {
   padding: 5px;
   font-family: "Philosopher", "Arial";
   margin: 0 50px;
-  cursor: pointer;
 }
 
 .top-nav a:hover {
@@ -48,7 +47,7 @@ body {
 .landing {
   background: pink;
   height: calc(100vh - 50px); /* vh forces to take up entire height of the viewport window. We do - 50px cuz we want to remove the nav bar. Nav bar is 50 pixels. */
-  background-image: url("../images/pexels-photo_large.jpg");
+  background-image: url("../images/notes-coffefe.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,7 +57,7 @@ body {
   color: white;
   text-align: center; /* to center the subhead h3 tag */
   font-family: "Spirax", "Arial", sans-serif;
-  text-shadow: 1px 2px #ff0000;
+  text-shadow: 2px 2px green;
   transition: 1s;
 }
 
